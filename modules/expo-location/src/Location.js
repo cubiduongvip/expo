@@ -68,7 +68,12 @@ function getProviderStatusAsync(): Promise<ProviderStatus> {
   return Location.getProviderStatusAsync();
 }
 
-async function getCurrentPositionAsync(options: LocationOptions = {}): Promise<LocationData> {
+async function getCurrentPositionAsync(options: {
+  timeout?: number,
+  enableHighAccuracy?: boolean,
+  maximumAge?: number,
+  distanceInterval?: number,
+} = {}): Promise<LocationData> {
   return Location.getCurrentPositionAsync(options);
 }
 
