@@ -70,7 +70,6 @@ export default class LocationScreen extends React.Component {
       this.setState({ searching: true });
       let result = await Location.getCurrentPositionAsync({
         enableHighAccuracy: true,
-        timeout: 1000,
       });
       this.setState({ singleLocation: result });
     } finally {
