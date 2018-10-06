@@ -168,9 +168,8 @@ dependencies {
   // WHEN_DISTRIBUTING_REMOVE_TO_HERE
 
   // Versioned react native
-  // THIS COMMENT IS USED BY android-build-aar.sh DO NOT MODIFY
-
   // WHEN_PREPARING_SHELL_REMOVE_FROM_HERE
+  // THIS COMMENT IS USED BY android-build-aar.sh DO NOT MODIFY
   // BEGIN_SDK_30
   compileOnly 'host.exp:reactandroid-abi30_0_0:1.0.0'
   // END_SDK_30
